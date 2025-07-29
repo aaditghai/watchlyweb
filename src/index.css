@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Film Studio Warm & Retro Pop Palette */
+    --background: 34 44% 95%; /* Soft cream #FFF3E2 */
+    --foreground: 0 0% 17%; /* Dark charcoal #2B2B2B */
+    --card: 34 44% 98%; /* Slightly warmer white for cards */
+    --card-foreground: 0 0% 17%;
+    --popover: 34 44% 98%;
+    --popover-foreground: 0 0% 17%;
+    --primary: 248 71% 58%; /* Deep cinematic purple #5E4AE3 */
+    --primary-foreground: 34 44% 98%;
+    --secondary: 349 100% 85%; /* Dusty pink highlights #FADADD */
+    --secondary-foreground: 0 0% 17%;
+    --muted: 34 30% 90%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 16 100% 66%; /* Warm retro coral #FF7F50 */
+    --accent-foreground: 34 44% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 34 44% 98%;
+    --border: 34 25% 85%;
+    --input: 34 25% 88%;
+    --ring: 248 71% 58%;
+    --radius: 1rem; /* More rounded for cozy feel */
+    --sidebar-background: 34 44% 96%;
+    --sidebar-foreground: 0 0% 17%;
+    --sidebar-primary: 248 71% 58%;
+    --sidebar-primary-foreground: 34 44% 98%;
+    --sidebar-accent: 349 100% 85%;
+    --sidebar-accent-foreground: 0 0% 17%;
+    --sidebar-border: 34 25% 85%;
+    --sidebar-ring: 248 71% 58%;
+    
+    /* Custom shadows for warm depth */
+    --shadow-warm: 0 4px 20px -4px hsl(248 71% 58% / 0.1);
+    --shadow-card: 0 2px 12px -2px hsl(34 25% 70% / 0.15);
+    --gradient-warm: linear-gradient(135deg, hsl(34 44% 98%), hsl(349 100% 96%));
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
